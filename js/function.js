@@ -71,6 +71,8 @@ $thmbs.forEach(function($thmb, idx) {
     $thmb.addEventListener('click', function(evt) {
         evt.preventDefault();
 
+        nowIdx = idx; // 현재 인덱스 업데이트
+
         // 'on' 클래스 초기화 및 현재 클릭된 썸네일에만 'on' 클래스 추가
         $thmbs.forEach(($th) => {
             $th.parentElement.classList.remove('on');
